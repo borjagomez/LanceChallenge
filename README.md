@@ -1,6 +1,6 @@
-# LanceChallenge
+# Capital One Challenge
 
-ML Code Author: Lance Muwayi
+Author: Lance Muwayi
 
 Requirements
 - Install Gcloud CLI

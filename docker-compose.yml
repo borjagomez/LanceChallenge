@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  notebook:
+    image: borjagomez/capitalonechallenge 
+    ports:
+      - "8888:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    command: "./start.sh"      
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888"]
+      interval: 5s
+      timeout: 10s
+      retries: 3
+      start_period: 5s    
